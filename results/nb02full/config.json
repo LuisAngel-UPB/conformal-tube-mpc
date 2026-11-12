@@ -1,0 +1,84 @@
+{
+ "QUICK": false,
+ "WEIGHTS_DIR": ".",
+ "OUT_DIR": "results",
+ "N_JOBS": 15,
+ "SEVERITY": 1.0,
+ "FS": 2000,
+ "T_C": 0.002,
+ "N_H": 25,
+ "TAU_MAX": 5.0,
+ "Q_POS": 10000.0,
+ "Q_VEL": 1.0,
+ "Q_INT": 100000.0,
+ "R_TAU": 0.01,
+ "EPS_Q": 0.001,
+ "N_TAIL": 25,
+ "TORQUE_MARGIN": 0.5,
+ "REF_C2": true,
+ "SCALES": [
+  2.0,
+  2.4,
+  3.2,
+  4.8,
+  6.4
+ ],
+ "PAYLOADS": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "X0_BOX": 0.0002,
+ "SIGMA_TAU": 0.005,
+ "MODELS": [
+  [
+   "Nominal",
+   "NOMINAL",
+   0,
+   0
+  ],
+  [
+   "HYBRID-35",
+   "HYBRID",
+   35,
+   0
+  ],
+  [
+   "PINN-175",
+   "PINN",
+   175,
+   0
+  ],
+  [
+   "MLP-35",
+   "MLP",
+   35,
+   0
+  ]
+ ],
+ "VARIANTS": [
+  "const",
+  "ref",
+  "ref+class"
+ ],
+ "DELTA": 0.1,
+ "N_PILOT": 50,
+ "N_CAL": 200,
+ "N_TEST": 400,
+ "PILOT_ITERS": 1,
+ "INFLATE": 1.05,
+ "DELTAS_CHECK": [
+  0.05,
+  0.1,
+  0.2
+ ],
+ "N_SPLITS": 500,
+ "SEED": 2026,
+ "STEP": 4,
+ "TAG": "FULL_20261016_180945",
+ "RUN_DIR": "results\\CMPC_NB02_FULL_20261016_180945"
+}

@@ -1,0 +1,97 @@
+{
+ "QUICK": false,
+ "OUT_DIR": "results",
+ "N_JOBS": 15,
+ "NJ": 2,
+ "SEVERITY": 1.0,
+ "FS": 2000,
+ "T_C": 0.002,
+ "N_H": 25,
+ "TAU_MAX": [
+  40.0,
+  20.0
+ ],
+ "Q_POS": 10000.0,
+ "Q_VEL": 1.0,
+ "Q_INT": 100000.0,
+ "R_TAU": 0.0002,
+ "EPS_Q": 0.001,
+ "N_TAIL": 25,
+ "TORQUE_MARGIN": [
+  4.0,
+  2.0
+ ],
+ "SCALES": [
+  1.0,
+  1.25,
+  1.6,
+  2.2,
+  3.0
+ ],
+ "PAYLOADS": [
+  0.0,
+  0.5,
+  1.0,
+  1.5,
+  2.0,
+  2.5,
+  3.0
+ ],
+ "X0_BOX": 0.0002,
+ "SIGMA_TAU": 0.05,
+ "TRAIN_SIZES": {
+  "MLP": 35,
+  "HYBRID": 35,
+  "PINN": 35
+ },
+ "EPOCHS": 150,
+ "HIDDEN": 64,
+ "BATCH": 256,
+ "LR": 0.002,
+ "MODELS": [
+  [
+   "Nominal",
+   "NOMINAL",
+   0,
+   0
+  ],
+  [
+   "MLP-35",
+   "MLP",
+   35,
+   0
+  ],
+  [
+   "HYBRID-35",
+   "HYBRID",
+   35,
+   0
+  ],
+  [
+   "PINN-35",
+   "PINN",
+   35,
+   0
+  ]
+ ],
+ "VARIANTS": [
+  "const",
+  "ref"
+ ],
+ "DELTA": 0.1,
+ "N_PILOT": 50,
+ "N_CAL": 200,
+ "N_TEST": 400,
+ "PILOT_ITERS": 1,
+ "INFLATE": 1.05,
+ "DELTAS_CHECK": [
+  0.05,
+  0.1,
+  0.2
+ ],
+ "N_SPLITS": 500,
+ "SEED": 2027,
+ "STEP": 4,
+ "TAG": "FULL_20261019_084452",
+ "RUN_DIR": "results\\CMPC_NB03_FULL_20261019_084452"
+}
